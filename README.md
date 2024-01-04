@@ -34,7 +34,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Main thing was understanding the dom and also using correct css and html names. 
 
 ## License
 
