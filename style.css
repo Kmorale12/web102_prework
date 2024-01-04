@@ -21,6 +21,10 @@ body {
 
 .stats-container {
     display: flex;
+    color: black;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -36,32 +40,37 @@ body {
     font-size: 50px;
 }
 
-#games-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.game-img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
-}
-
-.game-card {
-    background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
-    width: 300px;
+.gamecard {
+    background-color: white;
+    color: black;
+    padding: 10px; /* Adjust padding to provide space inside the card */
+    margin: 10px; /* Adjust margin between cards */
+    width: 300px; /* Adjust width to your preference */
     text-align: center;
-    border-radius: 7px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjust box-shadow to your preference */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
 }
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 20px rgba(173, 216, 230, 0.7); /* Adjust box-shadow on hover */
 }
 
+.game-img {
+    width: 100%; /* Adjust width to your preference */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjust box-shadow to your preference */
+}
+
+#games-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: space-around; /* Adjust as needed */
+}
+
+/* ... (existing styles) ... */
 #button-container {
     text-align: center;
 }
@@ -72,4 +81,32 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+.dark-mode {
+    background-color: black;
+      color: white;
+    
+    }
+.dark-mode-header{
+    background-color: red;
+    color:white:
+}
+.dark-mode-gamecard{
+    background-color: grey;
+    color:white;
+}
+#theme-button {
+    font-family: 'Cabin';
+    border: none;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 7px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#theme-button:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Increase the scale on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box-shadow on hover */
 }
